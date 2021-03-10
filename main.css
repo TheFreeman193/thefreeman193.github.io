@@ -1,0 +1,84 @@
+html {
+    background: rgb(240, 255, 240);
+    background: -moz-linear-gradient(170deg, rgba(240, 255, 240, 1) 0%, rgba(162, 247, 254, 1) 62%, rgba(161, 199, 255, 1) 84%, rgba(177, 159, 204, 1) 100%);
+    background: -webkit-linear-gradient(170deg, rgba(240, 255, 240, 1) 0%, rgba(162, 247, 254, 1) 62%, rgba(161, 199, 255, 1) 84%, rgba(177, 159, 204, 1) 100%);
+    background: linear-gradient(170deg, rgba(240, 255, 240, 1) 0%, rgba(162, 247, 254, 1) 62%, rgba(161, 199, 255, 1) 84%, rgba(177, 159, 204, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f0fff0", endColorstr="#b19fcc", GradientType=1);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-size: 100% 100%;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: black;
+    color: white;
+    border-radius: 12px;
+    padding: 5px;
+    min-width: 200px;
+    max-height: 60px;
+    min-height: 60px;
+}
+
+header>div.nameplate {
+    font-family: 'Bradley Hand', 'Brush Script MT', 'Bradley Hand ITC', cursive;
+    font-style: oblique;
+    font-weight: bold;
+    display: flex;
+    position: relative;
+}
+
+header .nameplate-text {
+    font-size: 50px;
+    margin: 0px;
+}
+
+header>div.nameplate img {
+    min-width: 60px;
+    max-height: 60px;
+    object-fit: contain;
+    border-radius: 12px;
+}
+
+header>div.nameplate>div {
+    margin-right: 15px;
+}
+
+footer>div.cc {
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    bottom: 15px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer>div.cc>a {
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+footer>div.cc img {
+    height: 15px;
+}
+
+footer>div.cc>a:visited {
+    color: black;
+}
+
+footer>div.cc>a:hover {
+    color: #008080;
+    text-decoration: underline;
+}
+
+footer>div.cc>a:active {
+    color: #808000;
+    text-decoration: underline;
+}

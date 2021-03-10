@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="150" height="20">
+    <linearGradient id="s" x2="0" y2="100%">
+        <stop offset="0" stop-color="#bbb" stop-opacity=".1" />
+        <stop offset="1" stop-opacity=".1" />
+    </linearGradient>
+    <clipPath id="r">
+        <rect width="150" height="20" rx="3" fill="#fff" />
+    </clipPath>
+    <g clip-path="url(#r)">
+        <rect width="64" height="20" fill="#555" />
+        <rect x="64" width="86" height="20" fill="#00aed2" />
+        <rect width="150" height="20" fill="url(#s)" />
+    </g>
+    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" aria-hidden="true" x="4" y="1">
+        <g fill="#000">
+            <path fill-rule="evenodd"
+                d="M7 4c-.83 0-1.5-.67-1.5-1.5S6.17 1 7 1s1.5.67 1.5 1.5S7.83 4 7 4zm7 6c0 1.11-.89 2-2 2h-1c-1.11 0-2-.89-2-2l2-4h-1c-.55 0-1-.45-1-1H8v8c.42 0 1 .45 1 1h1c.42 0 1 .45 1 1H3c0-.55.58-1 1-1h1c0-.55.58-1 1-1h.03L6 5H5c0 .55-.45 1-1 1H3l2 4c0 1.11-.89 2-2 2H2c-1.11 0-2-.89-2-2l2-4H1V5h3c0-.55.45-1 1-1h4c.55 0 1 .45 1 1h3v1h-1l2 4zM2.5 7L1 10h3L2.5 7zM13 10l-1.5-3-1.5 3h3z" />
+        </g>
+    </svg>
+    <g fill="#fff" text-anchor="middle" font-family="DejaVu Sans,Verdana,Geneva,sans-serif" font-size="110">
+        <!-- <image x="5" y="2" width="14" height="16" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNCIgaGVpZ2h0PSIxNiIgYXJpYS1oaWRkZW49InRydWUiPjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTcgNGMtLjgzIDAtMS41LS42Ny0xLjUtMS41UzYuMTcgMSA3IDFzMS41LjY3IDEuNSAxLjVTNy44MyA0IDcgNHptNyA2YzAgMS4xMS0uODkgMi0yIDJoLTFjLTEuMTEgMC0yLS44OS0yLTJsMi00aC0xYy0uNTUgMC0xLS40NS0xLTFIOHY4Yy40MiAwIDEgLjQ1IDEgMWgxYy40MiAwIDEgLjQ1IDEgMUgzYzAtLjU1LjU4LTEgMS0xaDFjMC0uNTUuNTgtMSAxLTFoLjAzTDYgNUg1YzAgLjU1LS40NSAxLTEgMUgzbDIgNGMwIDEuMTEtLjg5IDItMiAySDJjLTEuMTEgMC0yLS44OS0yLTJsMi00SDFWNWgzYzAtLjU1LjQ1LTEgMS0xaDRjLjU1IDAgMSAuNDUgMSAxaDN2MWgtMWwyIDR6TTIuNSA3TDEgMTBoM0wyLjUgN3pNMTMgMTBsLTEuNS0zLTEuNSAzaDN6Ii8+PC9zdmc+"/> -->
+        <text x="420" y="150" fill="#010101" fill-opacity=".3" transform="scale(.1)" textLength="370">
+            license
+        </text>
+        <text x="415" y="140" transform="scale(.1)" textLength="370">
+            license
+        </text>
+        <text x="1070" y="150" fill="#010101" fill-opacity=".3" transform="scale(.1)" textLength="700">
+            CC BY-SA 4.0
+        </text>
+        <text x="1065" y="140" transform="scale(.1)" textLength="700">
+            CC BY-SA 4.0
+        </text>
+    </g>
+</svg>
