@@ -1,6 +1,6 @@
 # TheFreeman193
 
-[![CC BY-SA 4.0][img license]][license]
+[![CC BY-SA 4.0][img license]][license] [![Pages Build][img pages build]][live page]
 
 ```ps
 Get-Coffee | Invoke-Brain
@@ -24,3 +24,4 @@ This is the repository for my projects homepage.
 [license origin]: http://creativecommons.org/licenses/by-sa/4.0/ "Creative Commons Attribution ShareAlike 4.0 International"
 [img license origin]: https://i.creativecommons.org/l/by-sa/4.0/88x31.png "Creative Commons Attribution ShareAlike 4.0 International"
 [live page]: https://thefreeman193.github.io/ "TheFreeman193"
+[img pages build]: https://img.shields.io/github/deployments/TheFreeman193/thefreeman193.github.io/github-pages?label=Pages%20Build "GitHub Pages Status"
