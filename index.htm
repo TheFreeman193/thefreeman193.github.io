@@ -6,7 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="TheFreeman193's Homepage" />
-        <meta name="keywords" content="TheFreeman193, TF193, Development, Software" />
+        <meta name="keywords" content="TheFreeman193, TF193, Development, Software, Programming" />
         <meta name="author" content="Nicholas Bissell (TheFreeman193)" />
         <link rel="stylesheet" type="text/css" href="main.css" />
         <title>TheFreeman193</title>
@@ -14,32 +14,92 @@
 
     <body>
         <header>
-            <div class="nameplate">
-                <div><img src="assets/image/logo-thefreeman193-675.png" alt="TheFreeman193 Logo" /></div>
+            <div class="topbar-container">
                 <div>
-                    <p class="nameplate-text">TheFreeman193</p>
+                    <div class="nameplate"></div>
+                </div>
+                <div>
+                    <span class="nameplate-text">TheFreeman193</span>
+                </div>
+                <div>
+                    <a rel="external" href="https://www.github.com/TheFreeman193/" class="outlink">
+                        <img src="assets/image/icon-github-mark-light-64px.png" alt="GitHub" class="logo" />
+                        <span>GitHub</span></a>
+                </div>
+                <div>
+                    <a rel="external" href="https://stackoverflow.com/users/12959131/thefreeman193" class="outlink">
+                        <img src="assets/image/icon-stackoverflow-logoglyph.svg" alt="StackOverflow" class="logo" />
+                        <span>StackOverflow</span></a>
+                </div>
+                <div>
+                    <a rel="external" href="https://www.reddit.com/user/thefreeman193/" class="outlink">
+                        <img src="assets/image/icon-reddit_mark_ondark.png" alt="Reddit" class="logo" />
+                        <span>Reddit</span></a>
+                </div>
+                <div>
+                    <a rel="external" href="https://steamcommunity.com/id/thefreeman193/" class="outlink">
+                        <img src="assets/image/icon-steam.png" alt="Steam" class="logo" />
+                        <span>Steam</span></a>
+                </div>
+                <div>
+                    <a rel="external" href="https://stackexchange.com/users/17841290/thefreeman193" class="outlink">
+                        <img src="assets/image/icon-stackexchange.png" alt="StackOverflow" class="logo" />
+                        <span>StackExchange</span></a>
                 </div>
             </div>
         </header>
-        <div style="position:fixed; top: 10%; left: 40%; text-align: left;">
-            <img height="600px" src="assets/image/construction.svg" alt='Under Construction' /><br />
-            <span style="font-size: 60px; font-style: italic;">"Getting there"</span>
-        </div>
+        <section class="main-body">
+            <div class="title-container" id="titleline-container">
+                <h1><i>Projects</i></h1>
+            </div>
+            <div class="main-container" id="body-container">
+                <div class="list-container">
+                    <div class="list-item">
+                        <a class="list-item" href="https://www.github.com/TheFreeman193/Scripts/">
+                            <img src='assets/image/icon-github-mark-64px.png' class='logo'>&nbsp;Scripts</a>
+                        <span class="smalldesc">&nbsp;a collection of more polished scripts</span>
+                    </div>
+                    <div class="list-item">
+                        <a class="list-item" href="https://thefreeman193.github.io/NordVPN-Servers/">
+                            <img src='assets/image/icon-github-mark-64px.png'
+                                class='logo'>&nbsp;NordVPN-Servers</a><span class="smalldesc">&nbsp;a cross-platform
+                            PowerShell module for interacting with the NordVPN
+                            API</span>
+                    </div>
+                    <div class="list-item">
+                        <a class="list-item" href="https://www.github.com/TheFreeman193/script_dump/">
+                            <img src='assets/image/icon-github-mark-64px.png' class='logo'>&nbsp;Script Dump</a>
+                        <span class="smalldesc">&nbsp;unpolished and experimental scripts</span>
+                    </div>
+                    <div class="list-item">
+                        <a class="list-item" href="https://www.github.com/TheFreeman193/script_dump/">
+                            <img src='assets/image/icon-github-mark-64px.png' class='logo'>&nbsp;Web Experiments</a>
+                        <span class="smalldesc">&nbsp;HTML, CSS3, and JS experiments</span>
+                    </div>
+                </div>
+                <div class="list-container">
+                    <div class="list-item"></div>
+                    <div class="list-item"></div>
+                </div>
+            </div>
+        </section>
+
         <footer>
             <div class="cc">
-                <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
-                    <img alt="Creative Commons License" style="border-width: 0"
-                        src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" />
-                </a><a rel="license"
-                    href="https://github.com/TheFreeman193/thefreeman193.github.io/blob/master/LICENSE.md">
-                    <img alt="Creative Commons License" style="border-width: 0"
-                        src="assets/image/badge-ccbysa4.svg" /></a>
+                <a rel="license" href="https://github.com/TheFreeman193/thefreeman193.github.io/blob/master/LICENSE.md">
+                    <img alt="Creative Commons License" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" />
+                    &nbsp;<img alt="Creative Commons License" src="assets/image/badge-ccbysa4.svg" /></a>
                 <br />This work is licensed under a
                 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons
-                    Attribution-ShareAlike 4.0 International License</a>.
-                &copy; <a rel="author" href="https://github.com/TheFreeman193">TheFreeman193</a> 2021.
+                    Attribution-ShareAlike 4.0 International License</a>. &copy;
+                <a rel="author" href="https://github.com/TheFreeman193">TheFreeman193</a>
+                2021.
             </div>
         </footer>
+        <div style="position:fixed; top: 0; left: 0; text-align: center; width: 100%; height: 100%; display:flex; flex-flow:column nowrap; justify-content: center; align-items: center; animation: const-fadeout 5s linear forwards;z-index:-1">
+            <img height="300vw" src="assets/image/construction.svg" alt='Under Construction' /><br />
+            <span style="font-size: 60px; font-style: italic;">"Construction ongoing"</span>
+        </div>
     </body>
 
 </html>

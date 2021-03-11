@@ -1,13 +1,13 @@
 html {
-    background: rgb(240, 255, 240);
-    background: -moz-linear-gradient(170deg, rgba(240, 255, 240, 1) 0%, rgba(162, 247, 254, 1) 62%, rgba(161, 199, 255, 1) 84%, rgba(177, 159, 204, 1) 100%);
-    background: -webkit-linear-gradient(170deg, rgba(240, 255, 240, 1) 0%, rgba(162, 247, 254, 1) 62%, rgba(161, 199, 255, 1) 84%, rgba(177, 159, 204, 1) 100%);
-    background: linear-gradient(170deg, rgba(240, 255, 240, 1) 0%, rgba(162, 247, 254, 1) 62%, rgba(161, 199, 255, 1) 84%, rgba(177, 159, 204, 1) 100%);
+    background: #F0FFF0;
+    background: -moz-linear-gradient(170deg, rgba(240, 255, 240, 1) 0%, rgba(162, 247, 254, 1) 62%, rgba(161, 199, 255, 1) 84%, rgba(196, 179, 221, 1) 100%);
+    background: -webkit-linear-gradient(170deg, rgba(240, 255, 240, 1) 0%, rgba(162, 247, 254, 1) 62%, rgba(161, 199, 255, 1) 84%, rgba(196, 179, 221, 1) 100%);
+    background: linear-gradient(170deg, rgba(240, 255, 240, 1) 0%, rgba(162, 247, 254, 1) 62%, rgba(161, 199, 255, 1) 84%, rgb(196, 179, 221) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f0fff0", endColorstr="#b19fcc", GradientType=1);
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -16,39 +16,151 @@ html {
     overflow-x: hidden;
 }
 
-header {
-    background-color: black;
+img.logo {
+    min-height: 20px;
+    max-height: 30px;
+    margin-right: 5px;
+}
+
+/** --- START HEADER --- */
+
+header>div.topbar-container {
+    background: black;
+    background: -moz-linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 97%, rgba(0, 0, 0, 0) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 97%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 97%, rgba(0, 0, 0, 0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#000000", GradientType=1);
     color: white;
     border-radius: 12px;
     padding: 5px;
-    min-width: 200px;
-    max-height: 60px;
     min-height: 60px;
-}
-
-header>div.nameplate {
-    font-family: 'Bradley Hand', 'Brush Script MT', 'Bradley Hand ITC', cursive;
-    font-style: oblique;
-    font-weight: bold;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: flex-start;
     position: relative;
 }
 
-header .nameplate-text {
-    font-size: 50px;
-    margin: 0px;
+header>div.topbar-container a.outlink {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: flex-end;
+    text-decoration: none;
+    color: palegreen;
 }
 
-header>div.nameplate img {
+header>div.topbar-container a.outlink:hover {
+    color: palevioletred;
+    transform: scale(1.05);
+}
+
+header>div.topbar-container a.outlink:active {
+    color: palegoldenrod;
+    transform: scale(1);
+}
+
+header>div.topbar-container a.outlink>* {
+    margin: 10px 10px;
+}
+
+header>div.topbar-container a.outlink>span {
+    font-size: 200%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    ;
+}
+
+header>div.topbar-container div.nameplate {
+    background-image: url(assets/image/logo-thefreeman193-675.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     min-width: 60px;
-    max-height: 60px;
+    min-height: 60px;
     object-fit: contain;
     border-radius: 12px;
 }
 
-header>div.nameplate>div {
+header .nameplate-text {
+    font-family: 'Bradley Hand', 'Brush Script MT', 'Bradley Hand ITC', cursive;
+    font-style: oblique;
+    font-weight: bold;
+    font-size: 50px;
+    margin: 0px 5px;
+}
+
+header>div.topbar-container>div {
     margin-right: 15px;
 }
+
+
+
+/** --- END HEADER --- */
+
+/** --- START BODY --- */
+
+.main-body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+}
+div.title-container {
+    margin: 10px 20px;
+}
+div.main-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: auto;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: flex-start;
+    margin: 15px 30px;
+}
+
+div.main-container>div {
+    margin: 15px;
+}
+
+div.list-container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between; /* Main axis */
+    align-items: flex-start; /* Cross axis */
+    align-content: center;
+}
+
+.list-item {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.list-item span {
+    margin-left: 5px;
+}
+
+.list-item a, .list-item a:visited {
+    text-decoration: none;
+    color: #33AAFF;
+    font-size: 20pt;
+}
+.list-item a:hover{
+    color: #FFAA33;
+    transform: scale(1.05);
+}
+.list-item a:active{
+    color: #AAFF33;
+    transform: scale(1);
+}
+
+/** --- END BODY --- */
+
+/** --- START FOOTER --- */
 
 footer>div.cc {
     position: absolute;
@@ -57,28 +169,38 @@ footer>div.cc {
     bottom: 15px;
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 70%;
+    /* display: flex; */
+    /* TODO MAKE FLEX */
 }
 
-footer>div.cc>a {
-    color: black;
+footer>div.cc a,footer>div.cc a:visited {
     text-decoration: none;
     font-weight: 600;
+
+    color: black;
 }
 
 footer>div.cc img {
     height: 15px;
 }
 
-footer>div.cc>a:visited {
-    color: black;
-}
-
-footer>div.cc>a:hover {
+footer>div.cc a:hover {
     color: #008080;
     text-decoration: underline;
+    transform: scale(1.05);
 }
 
-footer>div.cc>a:active {
+footer>div.cc a:active {
     color: #808000;
     text-decoration: underline;
+    transform: scale(1);
+}
+
+/** --- END FOOTER --- */
+
+@keyframes const-fadeout{
+    0% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { opacity: 0; }
 }
