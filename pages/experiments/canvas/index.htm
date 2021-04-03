@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="HTML5 Canvas Tests" />
+    <meta name="keywords"
+      content="TheFreeman193, TF193, Development, Software, Programming, HTML5, Canvas, Trigonometry, Tests, Experiments" />
+    <meta name="author" content="Nicholas Bissell (TheFreeman193)" />
+    <link rel="stylesheet" type="text/css" href="/assets/style/pages/experiments/canvas/canvas.css" />
+    <script src="/assets/script/pages/experiments/canvas/canvas.js" type="text/javascript">
+    </script>
+    <title>Canvas Trig (2015)</title>
+  </head>
+
+  <body onload="startup()">
+    <a href='../index.htm'>Back to Experiments</a>
+    <h1>Angles Calculator (demo)</h1>
+    <h2><i>Experiments with the canvas element.</i></h2>
+    <div class="graph">
+      <canvas width="350" height="350" id="outgraph">You need HTML5 to see this!</canvas>
+    </div>
+    <div id="datain">
+      <table class="data">
+        <tr>
+          <td class="aright">Type:</td>
+          <td class="acenter">
+            <span class="typesel">
+              <input id="seldeg" name="degrad" type="radio" checked><span
+                onmousedown="typesel('seldeg')">Degrees</span></input>
+              <input id="selrad" name="degrad" type="radio"><span onmousedown="typesel('selrad')">Radians</span></input>
+            </span>
+          </td>
+        </tr>
+        <tr>
+          <td class="aright">Angle:</td>
+          <td class="acenter"><input id="ang" type="textbox" placeholder="Enter angle" onkeypress="checkEnter(event)">
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="acenter"><input class="fill" type="button" value="Calculate" onclick="doCalc()"></td>
+        </tr>
+      </table>
+    </div>
+    <div class="dataout">
+      <table class="data">
+        <tr>
+          <td class="aright">Rounds:</td>
+          <td class="acenter"><input id="outrev" type="textbox" placeholder="<none>" readonly></td>
+        </tr>
+        <tr>
+          <td class="aright">Angle:</td>
+          <td class="acenter"><input id="outang" type="textbox" placeholder="<none>" readonly></td>
+        </tr>
+        <tr>
+          <td class="aright">Sine:</td>
+          <td class="acenter"><input id="outsin" type="textbox" placeholder="<none>" readonly></td>
+        </tr>
+        <tr>
+          <td class="aright">Cosine:</td>
+          <td class="acenter"><input id="outcos" type="textbox" placeholder="<none>" readonly></td>
+        </tr>
+        <tr>
+          <td class="aright">Tangent:</td>
+          <td class="acenter"><input id="outtan" type="textbox" placeholder="<none>" readonly></td>
+        </tr>
+        <tr>
+          <td class="aright">Quadrant:</td>
+          <td class="acenter"><input id="outquad" type="textbox" placeholder="<none>" readonly></td>
+        </tr>
+      </table>
+    </div>
+  </body>
+
+</html>

@@ -22,13 +22,59 @@ img.logo {
     margin-right: 5px;
 }
 
+a.greenlink {
+    color: palegreen;
+}
+a.greenlink:hover {
+    color: palevioletred;
+}
+a.greenlink:active {
+    color: palegoldenrod;
+}
+
+a.whitelink {
+    color: white;
+}
+a.whitelink:hover {
+    color: white;
+}
+a.whitelink:active {
+    color: palevioletred;
+}
+
+
+a.growlink {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: flex-end;
+    text-decoration: none;
+}
+a.growlink:hover {
+    transform: scale(1.05);
+}
+a.growlink:active {
+    transform: scale(1);
+}
+
+a.growlink>span.biglink {
+    font-size: 200%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+a.spaced>* {
+    margin: 10px 10px;
+}
+
 /** --- START HEADER --- */
 
 header>div.topbar-container {
     background: black;
-    background: -moz-linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 97%, rgba(0, 0, 0, 0) 100%);
-    background: -webkit-linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 97%, rgba(0, 0, 0, 0) 100%);
-    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 97%, rgba(0, 0, 0, 0) 100%);
+    background: -moz-linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0) 97%, rgba(0, 0, 0, 0) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0) 97%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0) 97%, rgba(0, 0, 0, 0) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#000000", GradientType=1);
     color: white;
     border-radius: 12px;
@@ -43,46 +89,14 @@ header>div.topbar-container {
     position: relative;
 }
 
-header>div.topbar-container a.outlink {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-end;
-    align-items: center;
-    align-content: flex-end;
-    text-decoration: none;
-    color: palegreen;
-}
-
-header>div.topbar-container a.outlink:hover {
-    color: palevioletred;
-    transform: scale(1.05);
-}
-
-header>div.topbar-container a.outlink:active {
-    color: palegoldenrod;
-    transform: scale(1);
-}
-
-header>div.topbar-container a.outlink>* {
-    margin: 10px 10px;
-}
-
-header>div.topbar-container a.outlink>span {
-    font-size: 200%;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    ;
-}
-
 header>div.topbar-container div.nameplate {
-    background-image: url(assets/image/logo-thefreeman193-675.png);
+    background-image: url(/assets/image/logo-thefreeman193-2021-filled-dark.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     min-width: 60px;
     min-height: 60px;
     object-fit: contain;
-    border-radius: 12px;
 }
 
 header .nameplate-text {
@@ -137,7 +151,7 @@ div.list-container {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
-    align-items: flex-end;
+    align-items: baseline;
 }
 
 .list-item span {
@@ -148,6 +162,10 @@ div.list-container {
     text-decoration: none;
     color: #33AAFF;
     font-size: 20pt;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: baseline;
 }
 .list-item a:hover{
     color: #FFAA33;
@@ -156,6 +174,9 @@ div.list-container {
 .list-item a:active{
     color: #AAFF33;
     transform: scale(1);
+}
+.list-item a>img {
+    align-self: center;
 }
 
 /** --- END BODY --- */

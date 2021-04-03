@@ -1,0 +1,45 @@
+.acenter {
+    text-align: center;
+}
+
+.aright {
+    text-align: right;
+}
+
+.graph canvas {
+    border: 1px solid black;
+    float: right;
+    position: absolute;
+    left: 320px;
+}
+
+.dataout {
+    margin-top: 25px;
+}
+
+input.fill {
+    width: 100%;
+    font-family: Verdana
+}
+
+input {
+    font-family: Verdana;
+    font-size: 12pt;
+}
+
+span.typesel {
+    cursor: pointer;
+}
+
+table.data td {
+    padding: 5px
+}
+
+table.data {
+    border-collapse: collapse;
+    width: 300px;
+}
+
+td {
+    border: 2px solid #DDD;
+}
