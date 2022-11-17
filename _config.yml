@@ -1,0 +1,18 @@
+repository: TheFreeman193/thefreeman193.github.io
+theme: jekyll-theme-tactile
+title: TheFreeman193
+description: >-
+  Graduate chemist, software developer, and author.
+show_downloads: false
+project_logo: assets/image/logo-thefreeman193-2021-filled-dark.png
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor/bundle
+plugins:
+- jekyll-github-metadata
+- jekyll-mentions
+- jekyll-redirect-from
+- jekyll-sitemap
+- jemoji
+custom_owner: Nicholas Bissell
